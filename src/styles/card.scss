@@ -1,0 +1,82 @@
+.card_container{
+    min-width: 250px;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    .card{
+        margin-top: calc(20% + 10vw);
+        margin-bottom: 30px;
+        // height: 420px;
+        background-color: #fff;
+        z-index: 10;
+        border-radius: 15px;
+        width: 100%;
+        box-shadow: 0px 25px 40px rgba(0, 0, 0 , 0.3);
+        overflow: hidden;
+        .top_img{
+            img{
+                width: 100%;
+            }
+        }
+
+        .profile_main{
+            position: relative;
+            .avatar_container{
+                position: absolute;
+                left: 50%;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                width: 120px;
+                height: 120px;
+                background-color: #fff;
+                transform: translate(-50%, -50%);
+                border-radius: 50% ;
+                overflow: hidden;
+                padding-top: 5px;
+                place-items:center ;
+                .avatar{
+                    width: 90%;
+                    img{
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .profile_information{
+                display: flex;
+                flex-flow: column nowrap ;
+                .profile_identity {
+                    display: flex;
+                    width:50%;
+                    justify-content: space-around;
+                    margin: auto;
+                    flex-flow: wrap;
+                    margin-top: 75px;
+                    .username{
+                        color:#000;
+                        // font-weight: 800;
+                        font-size: 24px;
+                        line-height: 1.4;
+                    }
+                    .age{
+                        color:#000;
+                        // font-weight: 800;
+                        font-size: 24px;
+                        line-height: 1.4;
+                    }
+                    .location{
+                        margin: auto;
+                        color:#000;
+                        margin-top: 10px;
+                        padding-bottom: 20px;
+                        font-weight: 800;
+                      
+                    }
+
+                }
+            }
+        }
+    }
+}
